@@ -1,0 +1,22 @@
+.section-b .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  min-height: 550px;
+  letter-spacing: 2px;
+}
+
+.section-b .container img {
+  width: 50%;
+  margin: auto;
+}
+
+.section-b .container > div {
+  padding: 2rem;
+}
+
+.section-b h1 {
+  margin-bottom: 0.3rem;
+  font-size: 1.8rem;
+}

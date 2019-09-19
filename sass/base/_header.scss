@@ -6,8 +6,8 @@
 
 .navbar {
   font-size: 1.2rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .navbar .logo {
@@ -32,4 +32,57 @@
 
 .navbar .nav a:hover {
   opacity: 0.6;
+}
+
+// showcase styles
+.showcase .container {
+  background: #1f3933;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  min-height: 550px;
+  letter-spacing: 2px;
+}
+
+.showcase .container img {
+  width: 50%;
+  margin: auto;
+}
+
+.showcase .container > div {
+  padding: 2rem;
+}
+
+.showcase h1 {
+  color: white;
+  margin-bottom: 0.3rem;
+  font-size: 1.8rem;
+}
+
+.showcase p {
+  color: white;
+  font-size: 0.9rem;
+}
+
+.showcase .btn {
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.4rem 1.4rem;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.btn:hover {
+  background: rgba(208, 208, 208, 0.2);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
