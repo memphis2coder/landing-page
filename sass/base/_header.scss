@@ -1,0 +1,35 @@
+// main-header
+
+.main-header {
+  border-bottom: 1px solid black;
+}
+
+.navbar {
+  font-size: 1.2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.navbar .logo {
+  font-weight: 300;
+}
+
+.navbar .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.navbar .nav {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar .nav a {
+  padding: 0 1rem;
+}
+
+.navbar .nav a:hover {
+  opacity: 0.6;
+}
