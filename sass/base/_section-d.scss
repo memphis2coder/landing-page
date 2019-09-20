@@ -1,4 +1,4 @@
-.section-b .container {
+.section-d .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -7,28 +7,28 @@
   letter-spacing: 2px;
 }
 
-.section-b .container img {
+.section-d .container img {
   width: 50%;
   margin: auto;
 }
 
-.section-b .container > div {
+.section-d .container > div {
   padding: 2rem;
 }
 
-.section-b h1 {
+.section-d h1 {
   margin-bottom: 1rem;
   font-size: 1.8rem;
   text-transform: uppercase;
 }
 
-.section-b p {
+.section-d p {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 1rem;
 }
 
-.section-b .btn {
+.section-d .btn {
   color: #1f3933;
   border: 1px solid #1f3933;
   border-radius: 5px;

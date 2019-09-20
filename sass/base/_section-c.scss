@@ -1,34 +1,36 @@
-.section-b .container {
+.section-c .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
   min-height: 550px;
   letter-spacing: 2px;
+  background: #f9f9f9;
 }
 
-.section-b .container img {
-  width: 50%;
+.section-c .container img {
+  width: 70%;
   margin: auto;
+  padding-bottom: 5rem;
 }
 
-.section-b .container > div {
+.section-c .container > div {
   padding: 2rem;
 }
 
-.section-b h1 {
+.section-c h1 {
   margin-bottom: 1rem;
   font-size: 1.8rem;
   text-transform: uppercase;
 }
 
-.section-b p {
+.section-c p {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 1rem;
 }
 
-.section-b .btn {
+.section-c .btn {
   color: #1f3933;
   border: 1px solid #1f3933;
   border-radius: 5px;
