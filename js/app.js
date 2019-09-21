@@ -1,3 +1,5 @@
-$(function () {
-    const $gallery = $('.gallery a').simpleLightbox();
+$(document).ready(function () {
+    $('.menu').click(function () {
+        $('li').toggleClass('active');
+    })
 });

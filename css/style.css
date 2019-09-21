@@ -26,33 +26,66 @@ img {
   overflow: hidden;
   padding: 0 2rem; }
 
-.main-header {
-  border-bottom: 1px solid black; }
-
 .navbar {
   font-size: 1.2rem;
   padding-top: 1.5rem;
-  padding-bottom: 1.5rem; }
+  padding-bottom: 0; }
 
 .navbar .logo {
   font-weight: 300; }
 
 .navbar .container {
   display: grid;
-  grid-template-columns: 1fr 1fr; }
+  grid-template-columns: 100px 1fr;
+  border-bottom: 30px solid #006340;
+  padding: 1rem; }
 
 .navbar .nav {
-  justify-self: end;
+  justify-self: center;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center; }
 
 .navbar .nav a {
-  padding: 0 1rem; }
+  padding: 0 1.5rem;
+  letter-spacing: 2px; }
 
 .navbar .nav a:hover {
   opacity: 0.6; }
 
+.toggle {
+  display: none; }
+
+@media (max-width: 768px) {
+  .toggle {
+    display: block;
+    position: absolute;
+    font-size: 1.5rem;
+    top: 25px;
+    right: 30px; }
+
+  .navbar {
+    padding-top: 0; }
+
+  ul {
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+
+  li {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 5px;
+    margin-right: 60px;
+    display: none; }
+
+  .navbar .nav li:nth-child(1) {
+    margin-top: 50px; }
+
+  .active {
+    display: block; } }
 .showcase .container {
   background: #1f3933;
   display: grid;
