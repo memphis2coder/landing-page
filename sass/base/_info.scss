@@ -1,0 +1,68 @@
+.info .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-bottom: 5px solid white;
+  min-height: 200px;
+  background: #f9f9f9f9;
+}
+
+.info .container .links {
+  text-align: center;
+}
+
+.info .container .links i {
+  padding: 0 2rem;
+  color: $secondary-color;
+}
+
+.info .container .links i:hover {
+  opacity: 0.5;
+  transition: 0.7s;
+  -webkit-transition: 0.7s;
+  -moz-transition: 0.7s;
+  -ms-transition: 0.7s;
+  -o-transition: 0.7s;
+}
+
+.info .container p {
+  font-size: 0.9rem;
+}
+
+// mailing list styles
+.info .container .mail p {
+  margin-bottom: 0.5rem;
+}
+
+.info .container .mail input {
+  width: 200px;
+  padding: 0.5rem;
+  border: 1px solid #999;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.info .container .mail .btn {
+  background: $primary-color;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 6px 20px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.info .container .mail .btn:hover {
+  opacity: 0.8;
+}
+
+.info .container .privacy {
+  font-size: 0.7rem;
+}
