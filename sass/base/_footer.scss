@@ -17,3 +17,12 @@
   font-size: 0.8rem;
   letter-spacing: 1.5px;
 }
+
+// mobile screen
+@media (max-width: 768px) {
+  .footer .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 2rem;
+  }
+}

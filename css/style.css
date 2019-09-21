@@ -29,7 +29,9 @@ img {
 .navbar {
   font-size: 1.2rem;
   padding-top: 1.5rem;
-  padding-bottom: 0; }
+  padding-bottom: 0;
+  text-transform: uppercase;
+  font-size: 0.9rem; }
 
 .navbar .logo {
   font-weight: 300; }
@@ -62,7 +64,7 @@ img {
     display: block;
     position: absolute;
     font-size: 1.5rem;
-    top: 25px;
+    top: 15px;
     right: 30px; }
 
   .navbar {
@@ -86,6 +88,9 @@ img {
 
   .active {
     display: block; } }
+/*
+  showcase
+*/
 .showcase .container {
   background: #1f3933;
   display: grid;
@@ -131,6 +136,16 @@ img {
   -ms-transition: 0.5s;
   -o-transition: 0.5s; }
 
+@media (max-width: 768px) {
+  .showcase .container {
+    grid-template-columns: 1fr;
+    text-align: center; }
+
+  .showcase .container div:first-child {
+    order: 2; }
+
+  .showcase .container div:last-child {
+    order: -1; } }
 body.hidden-scroll {
   overflow: hidden; }
 
@@ -387,6 +402,17 @@ body.hidden-scroll {
   background: #1f3933;
   color: white; }
 
+@media (max-width: 768px) {
+  .section-b .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 2rem; }
+
+  .section-b .container div:first-child {
+    order: 2; }
+
+  .section-b .container div:last-child {
+    order: -1; } }
 .section-c .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -429,6 +455,17 @@ body.hidden-scroll {
   background: #1f3933;
   color: white; }
 
+@media (max-width: 768px) {
+  .section-c .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 1rem; }
+
+  .section-c .container div:first-child {
+    order: 2; }
+
+  .section-c .container div:last-child {
+    order: -1; } }
 .section-d .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -469,6 +506,17 @@ body.hidden-scroll {
   background: #1f3933;
   color: white; }
 
+@media (max-width: 768px) {
+  .section-d .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 2rem; }
+
+  .section-d .container div:first-child {
+    order: 2; }
+
+  .section-d .container div:last-child {
+    order: -1; } }
 .info .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -527,7 +575,19 @@ body.hidden-scroll {
 .info .container .privacy {
   font-size: 0.7rem; }
 
-.last .container {
+@media (max-width: 768px) {
+  .info .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 2rem; }
+
+  .info .container div:first-child {
+    border-bottom: 1px solid black;
+    padding-bottom: 1rem; }
+
+  .info .container div:last-child {
+    padding-top: 1rem; } }
+.section-e .container {
   display: grid;
   grid-template-columns: 200px 200px 200px;
   padding: 2rem;
@@ -536,17 +596,22 @@ body.hidden-scroll {
   background: #f0f0f0;
   min-height: 250px; }
 
-.last .container h4 {
+.section-e .container h4 {
   margin-bottom: 1rem; }
 
-.last .container div > a {
+.section-e .container div > a {
   line-height: 2rem;
   font-size: 0.9rem;
   display: block; }
 
-.last .container div > a:hover {
+.section-e .container div > a:hover {
   opacity: 0.7; }
 
+@media (max-width: 768px) {
+  .section-e .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 2rem; } }
 .footer .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -562,5 +627,11 @@ body.hidden-scroll {
 .footer .container p {
   font-size: 0.8rem;
   letter-spacing: 1.5px; }
+
+@media (max-width: 768px) {
+  .footer .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 2rem; } }
 
 /*# sourceMappingURL=style.css.map */

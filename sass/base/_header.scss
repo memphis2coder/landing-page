@@ -1,12 +1,10 @@
 // main-header
-
-.main-header {
-}
-
 .navbar {
   font-size: 1.2rem;
   padding-top: 1.5rem;
   padding-bottom: 0;
+  text-transform: uppercase;
+  font-size: 0.9rem;
 }
 
 .navbar .logo {
@@ -37,7 +35,7 @@
   opacity: 0.6;
 }
 
-// toggle styles
+// toggle style
 .toggle {
   display: none;
 }
@@ -48,7 +46,7 @@
     display: block;
     position: absolute;
     font-size: 1.5rem;
-    top: 25px;
+    top: 15px;
     right: 30px;
   }
 
@@ -79,6 +77,10 @@
     display: block;
   }
 }
+
+/*
+  showcase
+*/
 
 // showcase styles
 .showcase .container {
@@ -131,4 +133,20 @@
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
+}
+
+// mobile screen
+@media (max-width: 768px) {
+  .showcase .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .showcase .container div:first-child {
+    order: 2;
+  }
+
+  .showcase .container div:last-child {
+    order: -1;
+  }
 }

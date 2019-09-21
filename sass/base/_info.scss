@@ -66,3 +66,21 @@
 .info .container .privacy {
   font-size: 0.7rem;
 }
+
+// mobile screen
+@media (max-width: 768px) {
+  .info .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .info .container div:first-child {
+    border-bottom: 1px solid black;
+    padding-bottom: 1rem;
+  }
+
+  .info .container div:last-child {
+    padding-top: 1rem;
+  }
+}

@@ -45,3 +45,20 @@
   background: #1f3933;
   color: white;
 }
+
+// mobile screen
+@media (max-width: 768px) {
+  .section-b .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .section-b .container div:first-child {
+    order: 2;
+  }
+
+  .section-b .container div:last-child {
+    order: -1;
+  }
+}
