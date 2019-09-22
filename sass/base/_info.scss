@@ -70,6 +70,7 @@
 // mobile screen
 @media (max-width: 768px) {
   .info .container {
+    display: grid;
     grid-template-columns: 1fr;
     text-align: center;
     padding: 2rem;
@@ -82,5 +83,15 @@
 
   .info .container div:last-child {
     padding-top: 1rem;
+  }
+
+  .info .container .links i {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .info .container .mail input {
+    width: 100%;
+    margin-bottom: 1rem;
   }
 }
